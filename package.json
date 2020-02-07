@@ -1,7 +1,7 @@
 {
-  "name": "{{ name }}",
+  "name": "{{ projectName }}",
   "version": "1.0.0",
-  "description": "A VuePress project created by vuepress-cli.",
+  "description": "A VuePress project created by vuepress-starter.",
   "main": "index.js",
   "scripts": {
     "dev": "vuepress dev docs",

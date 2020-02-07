@@ -2,7 +2,7 @@ module.exports = {
   title: "VuePress-cli",
   description: "A lightweight cli for VuePress project.",
   dest: "./dist",
-  base: "{{ base }}",
+  base: "{{ basePath }}",
   head: [
     ["link",{ rel: "icon",href: "/assets/logo.png" }]
   ],
@@ -16,17 +16,11 @@ module.exports = {
     sidebarDepth: 2,
     lastUpdated: "Last Updated",
     searchMaxSuggestoins: 10,
-    repo: "{{ repo }}",
+    repo: "{{ getRepo }}",
     editLinks: {{ editLinks }},
     editLinkText: "Is something wrong or missing? Edit this page on github!"
   },
   module: {
-    {{{ ruleLess }}}
-    // rules: [
-    //   {
-    //     test: /\.less$/,
-    //     loader: "less-loader", // compiles Less to CSS
-    //   },
-    // ],
+    {{{ useLess }}}
   }
 };
