@@ -21,7 +21,7 @@ module.exports = {
     editLinkText: "Is something wrong or missing? Edit this page on github!"
   },
   module: {
-    {{ ruleLess }}
+    {{{ ruleLess }}}
     // rules: [
     //   {
     //     test: /\.less$/,
